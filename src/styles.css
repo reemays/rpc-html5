@@ -1,0 +1,225 @@
+html,
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: url('../src/images/bg.png');
+}
+
+.credit-body{
+  margin: 30px;
+}
+
+.container{
+  background-color: rgba(255, 252, 75, 0.548);
+  padding: 20px;
+}
+
+/******************************************************/
+/*****************Mobile Device************************/
+/******************************************************/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+  #gameScreen {
+    top: 300px;
+    width: 800px;
+    height: 680px;
+    border: 0px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    margin: 0 auto;
+    padding: -5px;
+    background-color: #f8ca4d;
+    position: relative;
+  }
+
+  .title {
+    text-align: center;
+    color: black;
+    font-size: 58px;
+    top: 220px;
+    text-shadow: 5px 5px 10px white;
+    position: relative;
+  }
+
+  #rock {
+    position: absolute;
+    top: 67%;
+    left: 18%;
+  }
+  
+  #paper {
+    position: absolute;
+    top: 67%;
+    left: 43%;
+  }
+  
+  #scissor {
+    position: absolute;
+    top: 67%;
+    left: 68%;
+  }
+  
+  #battleText {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 54px;
+    text-shadow: 1px 1px 3px grey;
+    top: 30%;
+    position: relative;
+    font-family: Trebuchet MS, sans-serif;
+  }
+
+  #copyright{
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+    top: 90%;
+    left: 82%;
+    text-shadow: 3px 3px 10px white;
+  }
+
+  #credits{
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    top: 95%;
+    left: 82%;
+    text-shadow: 3px 3px 10px white;
+  }
+  
+  #version{
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+    top: 90%;
+    left: 2%;
+    text-shadow: 3px 3px 10px white;
+  }
+}
+
+/******************************************************/
+/*****************Laptop and PC************************/
+/******************************************************/
+@media only screen
+and (min-width : 1224px) {
+  #gameScreen {
+    top: 5px;
+    width: 640px;
+    height: 480px;
+    border: 0px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8ca4d;
+    position: relative;
+  }
+
+  .title {
+    text-align: center;
+    color: black;
+    top: 0;
+    text-shadow: 5px 5px 10px white;
+    position: relative;
+  }
+
+  #rock {
+    position: absolute;
+    top: 67%;
+    left: 14%;
+  }
+  
+  #paper {
+    position: absolute;
+    top: 67%;
+    left: 39%;
+  }
+  
+  #scissor {
+    position: absolute;
+    top: 67%;
+    left: 64%;
+  }
+  
+  #battleText {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 38px;
+    text-shadow: 1px 1px 3px grey;
+    top: 24%;
+    position: relative;
+    font-family: Trebuchet MS, sans-serif;
+  }
+
+  #copyright{
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    top: 90%;
+    left: 88%;
+    text-shadow: 3px 3px 10px white;
+  }
+
+  #credits{
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    top: 94%;
+    left: 90%;
+    text-shadow: 3px 3px 10px white;
+  }
+  
+  #version{
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    top: 90%;
+    left: 2%;
+    text-shadow: 3px 3px 10px white;
+  }
+}
+
+/******************************************************/
+/*****************Animation Section********************/
+/******************************************************/
+.paper {
+  position: absolute;
+  top: 67%;
+  left: 39%;
+}
+
+.paper:active {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  margin: 1.5%;
+}
+
+.rock {
+  position: absolute;
+  top: 67%;
+  left: 14%;
+}
+
+.rock:active {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  margin: 1.5%;
+}
+
+.scissor {
+  position: absolute;
+  top: 67%;
+  left: 64%;
+}
+
+.scissor:active {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  margin: 1.5%;
+}
